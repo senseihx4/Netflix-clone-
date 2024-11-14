@@ -1,0 +1,502 @@
+* {
+    padding: 0;
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: Segoe UI, Roboto, Ubuntu, sans-serif;
+}
+
+body {
+    background-color: #1c1a1a;
+    height: auto;
+    height: 350vh;
+}
+
+/* Navbar styling */
+.navbar {
+    height: 120px;
+    padding: 0px 36px;
+    margin: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 10; 
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* Logo and button styling */
+.nav-logo {
+    height: 40px;
+    width: 250px;
+}
+
+.logo {
+    background-image: url('netflix-logo-0BC9BFB255-seeklogo.com.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 40px;
+    width: 100%;
+    border: 2px solid transparent;
+}
+
+.button {
+    display: flex;
+    align-content: center;
+}
+
+.sign-in {
+    padding-left: 10px;
+}
+
+.sign-in-button {
+    background-color: #ffffff;
+    color: #000000;
+    border: none;
+    padding: 8px 20px;
+    border-radius: 20px;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+    box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.2);
+}
+
+.sign-in-button:hover {
+    background-color: #f2f2f2;
+}
+
+.language-button {
+    background-color: #1c1a1a;
+    color: #ffffff;
+    border: none;
+    padding: 6px 12px;
+    border-radius: 20px;
+    font-size: 14px;
+    font-weight: 400;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.2);
+}
+
+.button-logo {
+    height: 16px;
+    width: auto;
+    color: #ffffff;
+}
+
+.language-button .arrow {
+    font-size: 7px;
+    color: #444444;
+    margin-left: 4px;
+}
+
+.language-button:hover {
+    background-color: #444444;
+}
+
+/* Hero Section Styling */
+.hero-section {
+    background: url('netimage (1).png') no-repeat center center/cover;
+    height: 200vh;
+    width:100%;
+    margin-top: 100px;
+    position: relative;
+    color: white;
+    overflow: hidden;
+    animation: bgchange 25s infinite ease-in-out;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+@keyframes bgchange {
+    0% {
+        background-image: url('netimage (1).png');
+    }
+    20% {
+        background-image: url('bc2.jpg');
+    }
+    40% {
+        background-image: url('bc3.jpg');
+    }
+    60% {
+        background-image: url('netimage (1).png');
+    }
+    80% {
+        background-image: url('bc2.jpg');
+    }
+    100% {
+        background-image: url('bc3.jpg');
+    }
+}
+
+.slider {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+.blur {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 450vh;
+    background: rgba(15, 15, 15, 0.404);
+    backdrop-filter: blur(40px);
+    z-index: 1; 
+}
+
+/* Container Styling */
+.container {
+    position: relative; 
+    height: 160VH;
+    padding: 0px 36px;
+    width:100%;
+    display: flex;
+    align-items: center;
+    z-index: 2; 
+   
+}
+
+/* Content Styling */
+.content {
+    position: relative;
+    top: 400px;
+    max-width: 90%;
+    z-index: 3;
+    padding: 20px;
+    order: 1;
+}
+
+.content h1 {
+    font-size: 3em;
+    margin-bottom: 10px;
+    line-height: 1.2;
+    text-align: center;
+
+}
+
+.content p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+    text-align: center;
+
+}
+
+.subscription-form {
+    display: flex;
+    margin-top: 20px;
+    position: relative;
+    gap: 10px;
+    order: 2;
+    margin-bottom: 50px;
+    max-width: 600px;
+    left: 30%;
+
+}
+
+.subscription-form input {
+    height: 56px;
+    width: 388px;
+    padding: 15px;
+    border: 1px solid rgb(74, 69, 71);
+    border-radius: 30px;
+    color: rgb(188, 187, 187);
+    flex: 1;
+    font-size: 1em;
+    background-color: rgb(30, 24, 26);
+}
+
+input::placeholder {
+    color: rgb(188, 187, 187);
+}
+
+.subscription-form button {
+    height: 56px;
+    width: 184px;
+    padding: 15px 20px;
+    padding-bottom: 15px;
+    background-color: #e50914;
+    color: rgb(255, 251, 251);
+    border: none;
+    border-radius: 30px;
+    font-size: 20px;
+    font-family: sans-serif;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.subscription-form button:hover {
+    background-color: #ff0a16;
+}
+.show {
+    margin-bottom: 30px;
+    padding-right: 40px;
+    padding-left: 40px;
+    width: 110%;
+    overflow: hidden;
+    
+ 
+}
+
+h2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.trend {
+    display: flex;
+    overflow-x: auto;
+    gap: 10PX;
+    padding-bottom: 10px;
+    scrollbar-width: none; 
+    width: 94%;
+    /* For Firefox */
+}
+
+.trend::-webkit-scrollbar {
+    display: none;
+}
+
+.movie-card {
+    width: 180px;
+    height: 260px;
+    padding: 10.4px 6px 10.4px 8px;
+    border: 1px solid transparent;
+    border-radius: 20px;
+    background-size: cover;
+    background-repeat:no-repeat;
+    background-position: center;
+    position: relative;
+    cursor: pointer;
+    overflow: hidden;
+    transition: transform 0.4s ease-in, box-shadow 0.3s ease;
+    flex-grow: 0; 
+    flex-shrink: 0;
+    box-sizing: border-box;
+}
+
+.movie-card:hover {
+    transform: scale(1.1);
+    
+   
+}
+/*reason*/
+.reason {
+    position: relative;
+    color: #ffffff;
+    display: flex;
+    padding-left:70px;
+    padding-right:40px;
+    height: 300px;
+    z-index: 5;
+}
+
+.reasons-section {  
+   overflow: hidden;
+    margin: 20px;
+    height:300px;
+}
+
+.reasons-section h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.reasons-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    
+}
+
+.reason-card {
+    background-color: rgb(39,39,39);
+    border-radius: 25px;
+    width: 292px;
+    height: 150px;
+    border: 1px solid rgb(74, 69, 71);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease;
+}
+
+.reason-card:hover {
+    transform: translateY(-5px);
+}
+
+.reason-card p {
+    font-size: 1em;
+    font-weight: 500;
+    padding: 12px 16px 90px; 
+    color: #ffffff;
+}
+
+.icon img {
+    width: 70px; 
+    padding-top:70px;
+    padding-right:20px;
+    height: 48;
+    top:0%;
+    opacity: 0.8;
+}
+.faq-section {
+    width: 450px;
+    position: relative;
+    z-index: 5;
+    padding-left:80px;
+    padding-right:40px;
+    color:#ffffff;
+}
+.faq-item {
+    background-color:rgb(39,39,39);
+    border: 1px solid rgb(74, 69, 71);
+    width: 1250px;
+    border-radius: 20px;
+    margin: 10px 0;
+    padding: 24px;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.faq-item .question {
+    font-weight: bold;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.faq-item .icon {
+    font-size: 24px;
+    color: #888;
+}
+.faq-item .answer {
+    max-height: 0;
+    overflow: hidden;
+    color: #ccc;
+    transition: max-height 0.5s ease-in-out, padding 0.5s ease-in-out;
+    padding-top: 0;
+}
+.faq-item.closing .answer {
+    transition: max-height 0.3s ease-in, padding 0.3s ease-in;
+}
+.faq-item.active .answer {
+    max-height: 500px; 
+    padding-top: 20px;
+}
+.get-started{
+    display: flex;
+    position: relative;
+    margin:50px;
+    justify-content: center;
+    z-index:5;
+}
+.get-started button {
+    height: 56px;
+    width: 184px;
+    padding: 15px 20px;
+    padding-bottom: 15px;
+    background-color: #e50914;
+    color: rgb(255, 251, 251);
+    border: none;
+    border-radius: 30px;
+    font-size: 20px;
+    font-family: sans-serif;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.get-started button:hover {
+    background-color: #ff0a16;
+}
+
+footer {
+    color: white;
+    max-width: 60vw;
+    margin: 70px;
+    padding: 60px;
+    position: relative;
+    z-index: 5;
+}
+footer .questions {
+    padding: 34px 0;
+}
+.footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    width:1300px;
+    color: white;
+}
+@media screen and (max-width: 1300px) {
+    nav{
+        max-width: 90vw;
+    }
+    .first {
+        flex-wrap: wrap;
+    }
+    .secImg img {
+        width: 305px;
+    }
+    .secImg video {
+        width: 305px;
+    }
+    .hero> :nth-child(1) {
+        font-size: 32px;
+    }
+    .hero> :nth-child(2) {
+        font-size: 18px;
+    }
+    .hero> :nth-child(3) {
+        font-size: 18px;
+    }
+    .hero-buttons {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 16px;
+    }
+    .faq h2 {
+        text-align: center;
+        font-size: 32px;
+    }
+    footer {
+        max-width: 90vw;
+        padding: 75px 0;
+    }
+    .footer-item{
+        align-items: center;
+    }
+ 
+}
+@media screen and (max-width: 1300px) {
+    .footer {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 25px;
+    }
+}
+.footer a {
+    font-size: 14px;
+    color: white;
+}
+.footer-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    gap: 23px;
+}
