@@ -35,7 +35,7 @@ body {
 }
 
 .logo {
-    background-image: url('netflix-logo-0BC9BFB255-seeklogo.com.png');
+    background-image: url('images/logo.png');
     background-size: contain;
     background-repeat: no-repeat;
     height: 40px;
@@ -499,4 +499,5 @@ footer .questions {
     flex-direction: column;
     justify-content: space-around;
     gap: 23px;
+
 }
