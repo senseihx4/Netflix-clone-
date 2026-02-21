@@ -101,7 +101,7 @@ body {
 
 /* Hero Section Styling */
 .hero-section {
-    background: url('netimage (1).png') no-repeat center center/cover;
+    background: url('images/bg1.jpeg') no-repeat center center/cover;
     height: 200vh;
     width:100%;
     margin-top: 100px;
@@ -116,22 +116,22 @@ body {
 
 @keyframes bgchange {
     0% {
-        background-image: url('netimage (1).png');
+        background-image: url('images/bg1.jpeg');
     }
     20% {
-        background-image: url('bc2.jpg');
+        background-image: url('images/bg2.jpg');
     }
     40% {
-        background-image: url('bc3.jpg');
+        background-image: url('images/bg3.jpg');
     }
     60% {
-        background-image: url('netimage (1).png');
+        background-image: url('images/bg1.jpeg');
     }
     80% {
-        background-image: url('bc2.jpg');
+        background-image: url('images/bg2.jpg');
     }
     100% {
-        background-image: url('bc3.jpg');
+        background-image: url('images/bg3.jpg');
     }
 }
 
@@ -501,3 +501,4 @@ footer .questions {
     gap: 23px;
 
 }
+
