@@ -4,7 +4,7 @@ A pixel-perfect front-end clone of the Netflix landing page, built with pure **H
 
 ---
 
-## ✨ Features
+## ✨ Features 
 
 - 🎨 Pixel-accurate Netflix landing page recreation
 - 📱 Fully responsive — works on mobile, tablet, and desktop        
