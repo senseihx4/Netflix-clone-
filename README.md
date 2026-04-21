@@ -2,7 +2,7 @@
 
 A pixel-perfect front-end clone of the Netflix landing page, built with pure **HTML and CSS** — no frameworks, no libraries. Every section, layout, and style was hand-coded from scratch to replicate Netflix's UI as closely as possible.
 
----
+--- 
 
 ## ✨ Features 
 
